@@ -261,7 +261,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 .eyebrow {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px;
   font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
   color: var(--accent-2); text-transform: uppercase;
 }
@@ -934,7 +934,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 @media (max-width: 1080px) {
-  .hero__grid { grid-template-columns: 1fr; padding-top: 44px; }
+  .hero__grid { grid-template-columns: minmax(0, 1fr); padding-top: 44px; }
   .hero__copy { max-width: 620px; }
   .hero__stage { min-height: 0; margin-top: 18px; display: block; padding-bottom: 24px; }
   .stage__watch {
@@ -1025,6 +1025,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .ftr__bottom { flex-direction: column; gap: 10px; }
   .sec { padding: 68px 0; }
   .contact { padding-bottom: 80px; }
+}
+
+@media (max-width: 420px) {
+  .eyebrow__sep { display: none; }
 }
 
 @media (max-width: 380px) {
