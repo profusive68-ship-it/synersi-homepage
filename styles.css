@@ -132,9 +132,9 @@ ol,ul{list-style:none}
 .brand:hover .brand__mark{transform:scale(1.05)}
 .brand__type{display:flex;flex-direction:column;line-height:1.1}
 .brand__word{font-size:20px;font-weight:700;letter-spacing:-0.03em}
-.brand__word-si{color:var(--sage-2)}
+.brand__word-si{color:var(--sage-light)}
 .site-header.is-scrolled .brand__word-si{color:var(--sage)}
-.brand__kr{font-size:10.5px;font-weight:500;letter-spacing:.02em;opacity:.55;margin-top:4px}
+.brand__kr{font-size:11px;font-weight:500;letter-spacing:.015em;opacity:.62;margin-top:4px}
 .nav{display:flex;align-items:center;gap:34px}
 .nav a{font-size:14px;font-weight:500;opacity:.72;transition:opacity .2s;position:relative}
 .nav a::after{content:'';position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:currentColor;transition:right .35s cubic-bezier(.2,.7,.3,1)}
@@ -424,7 +424,7 @@ ol,ul{list-style:none}
 .process__step::before{content:'';position:absolute;top:-2.5px;left:0;width:5px;height:5px;background:var(--sage);opacity:.5}
 .process__step:nth-child(n+2)::before{left:24px}
 .process__step + .process__step{border-left:1px solid var(--line);padding-left:24px}
-.process__no{font-family:var(--serif);font-size:28px;color:var(--champagne);letter-spacing:-0.02em;line-height:1}
+.process__no{font-family:var(--serif);font-size:28px;color:#B49B75;letter-spacing:-0.02em;line-height:1}
 .process__step h3{font-size:17px;font-weight:600;letter-spacing:-0.02em;margin-top:16px}
 .process__step p{font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.7}
 
