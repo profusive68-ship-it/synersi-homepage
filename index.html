@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>시너지스 SynerSI · 치유관광 프로그램 효과검증 포털</title>
 <meta name="description" content="시너지스(SynerSI)는 애플워치 생체신호·현장 영상·사전·사후 검사지를 결합해 치유관광·웰니스 프로그램의 효과를 수치로 검증하고, 기관이 제출할 수 있는 리포트로 완성하는 B2B 솔루션입니다.">
-<meta name="theme-color" content="#0B0E0D">
-<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#060808">
+<meta name="color-scheme" content="dark">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://profusive68-ship-it.github.io/synersi-homepage/">
 <link rel="alternate" type="text/plain" href="https://profusive68-ship-it.github.io/synersi-homepage/llms.txt" title="LLM용 사이트 요약">
@@ -31,19 +31,19 @@
 
 <link rel="preload" href="assets/fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Pretendard-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Pretendard-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/brand/hero-watch.webp" as="image" type="image/webp">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
 
-<header class="site-header" id="siteHeader">
-  <div class="site-header__inner">
+<header class="hdr" id="siteHeader">
+  <div class="hdr__in">
     <a class="brand" href="#top" aria-label="시너지스(SynerSI) 홈">
-      <img class="brand__mark" src="assets/brand/synersi-mark.webp" alt="" width="34" height="34" aria-hidden="true">
-      <span class="brand__type">
-        <span class="brand__word">Syner<span class="brand__word-si">SI</span></span>
-        <span class="brand__kr">시너지스 · 치유관광 효과검증</span>
-      </span>
+      <img class="brand__mark" src="assets/brand/synersi-mark.webp" alt="" width="30" height="30" aria-hidden="true">
+      <span class="brand__word">Syner<span class="brand__si">SI</span></span>
+      <span class="brand__tag">치유관광 효과검증</span>
     </a>
 
     <nav class="nav" aria-label="주요 메뉴">
@@ -55,9 +55,9 @@
       <a href="#faq">FAQ</a>
     </nav>
 
-    <div class="site-header__actions">
-      <a class="btn btn--sm btn--solid" href="mailto:profusive68@gmail.com?subject=%EC%8B%9C%EB%84%88%EC%A7%80%EC%8A%A4%20%EB%8F%84%EC%9E%85%20%EC%83%81%EB%8B%B4">데모 요청</a>
-      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="메뉴 열기">
+    <div class="hdr__act">
+      <a class="btn btn--glass btn--xs" href="#contact">도입 문의</a>
+      <button class="burger" type="button" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="메뉴 열기">
         <span></span><span></span>
       </button>
     </div>
@@ -66,12 +66,12 @@
 
 <div class="mobile-menu" id="mobileMenu" hidden>
   <nav aria-label="모바일 메뉴">
-    <a href="#product"><span>01</span>제품</a>
-    <a href="#architecture"><span>02</span>아키텍처</a>
-    <a href="#stages"><span>03</span>6단계</a>
-    <a href="#specs"><span>04</span>기술 사양</a>
-    <a href="#trust"><span>05</span>보안·개인정보</a>
-    <a href="#faq"><span>06</span>FAQ</a>
+    <a href="#product"><span class="mono">01</span>제품</a>
+    <a href="#architecture"><span class="mono">02</span>아키텍처</a>
+    <a href="#stages"><span class="mono">03</span>6단계</a>
+    <a href="#specs"><span class="mono">04</span>기술 사양</a>
+    <a href="#trust"><span class="mono">05</span>보안·개인정보</a>
+    <a href="#faq"><span class="mono">06</span>FAQ</a>
   </nav>
   <div class="mobile-menu__foot">
     <a href="mailto:profusive68@gmail.com">profusive68@gmail.com</a>
@@ -83,69 +83,143 @@
 
   <!-- ─────────────── HERO ─────────────── -->
   <section class="hero" id="top" aria-labelledby="hero-title">
-    <div class="hero__light" aria-hidden="true"></div>
-    <div class="container hero__inner">
+    <div class="hero__bg" aria-hidden="true"><span class="hero__mesh"></span></div>
+
+    <div class="wrap hero__grid">
       <div class="hero__copy">
-        <p class="eyebrow eyebrow--dark"><span class="eyebrow__rule" aria-hidden="true"></span>치유관광 프로그램 효과검증 · B2B</p>
-        <h1 class="hero__title" id="hero-title">치유의 순간을,<br><em>기록으로</em> 남깁니다.</h1>
-        <p class="hero__lede">시너지스는 애플워치 생체신호와 현장 영상, 사전·사후 검사지를 하나로 묶어 프로그램이 남긴 변화를 기관이 제출할 수 있는 리포트로 완성합니다.</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span>BIOMETRIC INTELLIGENCE<span class="eyebrow__sep" aria-hidden="true">·</span>치유관광 효과검증</p>
+        <h1 class="hero__title" id="hero-title">
+          측정하고.<br>
+          분석하고.<br>
+          <span class="grad">증명합니다.</span>
+        </h1>
+        <p class="hero__lede">
+          애플워치 생체신호와 사전·사후 검사지를 하나의 증거로.<br>
+          치유관광·웰니스 프로그램의 변화를 기관이 제출할 수 있는 리포트로 완성합니다.
+        </p>
         <div class="hero__cta">
-          <a class="btn btn--solid" href="#contact">도입 상담 <span class="btn__arrow" aria-hidden="true">→</span></a>
-          <a class="btn btn--ghost" href="#product">현장 화면 보기</a>
+          <a class="btn btn--primary" href="#contact">도입 상담<span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--glass" href="#product">플랫폼 보기</a>
         </div>
-        <dl class="metrics">
-          <div class="metrics__item"><dt>측정 주기</dt><dd>1 <span>Hz</span></dd></div>
-          <div class="metrics__item"><dt>아이폰 1대당</dt><dd>5 <span>대</span></dd></div>
-          <div class="metrics__item"><dt>실시간 관제</dt><dd>20 <span>명</span></dd></div>
-          <div class="metrics__item"><dt>회차 정원</dt><dd>50 <span>명</span></dd></div>
+
+        <dl class="hero__stats">
+          <div><dt>측정 주기</dt><dd>1<span>Hz</span></dd></div>
+          <div><dt>아이폰 1대당</dt><dd>5<span>대</span></dd></div>
+          <div><dt>실시간 관제</dt><dd>20<span>명</span></dd></div>
+          <div><dt>회차 정원</dt><dd>50<span>명</span></dd></div>
         </dl>
       </div>
 
-      <div class="hero__visual">
-        <article class="report-card" aria-label="개인 회복 리포트 예시">
-          <div class="report-card__top">
-            <span class="mono">Personal&nbsp;Report</span>
-            <span class="report-card__tag">예시 데이터</span>
+      <div class="hero__stage">
+        <figure class="stage__watch">
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/brand/hero-watch-mobile.webp" type="image/webp">
+            <img src="assets/brand/hero-watch.webp" alt="검은 현무암 위에 놓인 애플워치. 화면에는 시너지스의 에메랄드 크리스탈 심볼과 심전도 파형이 빛나고 있습니다." width="1536" height="1024" fetchpriority="high">
+          </picture>
+        </figure>
+
+        <article class="dash" aria-label="실시간 생체신호 대시보드 화면 예시">
+          <div class="dash__top">
+            <span class="dash__id"><i class="live-dot" aria-hidden="true"></i>실시간 생체신호 개요</span>
+            <span class="badge-demo">예시 데이터</span>
           </div>
-          <h2 class="report-card__title">개인 회복 리포트</h2>
-          <p class="report-card__meta">USER-012 · 제주 치유의 숲 · 4회차 · 2026.11.18</p>
-          <div class="report-card__kpis">
-            <div><span class="kpi__label">SDNN</span><span class="kpi__value">82<em>ms</em></span></div>
-            <div><span class="kpi__label">평균 심박</span><span class="kpi__value">74<em>bpm</em></span></div>
-            <div><span class="kpi__label">회복 하강</span><span class="kpi__value">−14<em>bpm</em></span></div>
+          <div class="dash__range">
+            <div class="seg" role="group" aria-label="조회 기간 선택">
+              <button class="seg__btn is-on" type="button" data-range="1H" aria-pressed="true">1H</button>
+              <button class="seg__btn" type="button" data-range="6H" aria-pressed="false">6H</button>
+              <button class="seg__btn" type="button" data-range="24H" aria-pressed="false">24H</button>
+            </div>
+            <span class="dash__stamp mono" id="dashStamp">14:20 기준</span>
           </div>
-          <figure class="report-card__chart">
-            <svg class="chart" viewBox="0 0 560 176" role="img" aria-label="안정 구간에서 심박이 오르고 회복 구간에서 하강하는 세션 곡선" data-chart="hero"></svg>
-            <figcaption class="chart__axis"><span>00:00 입소</span><span>00:20 안정</span><span>00:55 프로그램</span><span>01:10 회복</span></figcaption>
-          </figure>
-          <div class="report-card__foot">
-            <span class="score"><span class="score__grade">A</span> 데이터 신뢰도 92<span class="muted">/100</span></span>
-            <span class="mono muted">PDF · XLSX</span>
+
+          <div class="card card--hr">
+            <div class="card__label">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.4S2.2 9.9 2.2 6.1a3.2 3.2 0 0 1 5.8-1.9A3.2 3.2 0 0 1 13.8 6.1c0 3.8-5.8 7.3-5.8 7.3Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+              심박수
+              <span class="card__state"><i class="live-dot" aria-hidden="true"></i>LIVE</span>
+            </div>
+            <div class="big"><b id="dashBpm">74</b><span>BPM</span></div>
+            <div class="wavebox">
+              <svg class="wave" viewBox="0 0 520 132" preserveAspectRatio="none" role="img" aria-label="1시간 심박수 파형 예시" data-chart="hero"></svg>
+              <div class="wave__y" aria-hidden="true"><span>120</span><span>80</span><span>40</span></div>
+            </div>
+            <div class="wave__x" id="dashAxis" aria-hidden="true"><span>13:20</span><span>13:40</span><span>14:00</span><span>14:20</span></div>
+          </div>
+
+          <div class="dash__duo">
+            <div class="card card--hrv">
+              <div class="card__label">HRV (SDNN)</div>
+              <div class="mini-row">
+                <div class="big big--sm"><b id="dashHrv">82</b><span>ms</span></div>
+                <span class="pill-ok" id="dashHrvState">안정</span>
+              </div>
+              <svg class="spark" viewBox="0 0 180 44" preserveAspectRatio="none" role="img" aria-label="HRV 추이 예시" data-chart="spark"></svg>
+            </div>
+
+            <div class="card card--rec">
+              <div class="card__label">회복 점수</div>
+              <div class="ring">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="7"/>
+                  <circle id="ringArc" cx="60" cy="60" r="50" fill="none" stroke="url(#ringGrad)" stroke-width="7" stroke-linecap="round"
+                          stroke-dasharray="314.16" stroke-dashoffset="25.13" transform="rotate(-90 60 60)"/>
+                  <defs>
+                    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#8CF7D2"/><stop offset="100%" stop-color="#2FD79A"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="ring__txt"><b id="dashRec">92</b><span>/100</span></div>
+              </div>
+              <p class="rec__note"><strong>최적</strong>회복 양호</p>
+            </div>
+          </div>
+
+          <div class="dash__triple">
+            <div class="card card--mini">
+              <div class="card__label">호흡수</div>
+              <div class="mini-val"><b id="dashResp">14.2</b><span>회/min</span></div>
+              <span class="mini-tag">안정</span>
+            </div>
+            <div class="card card--mini">
+              <div class="card__label">수면</div>
+              <div class="mini-val"><b id="dashSleep">96</b><span>/100</span></div>
+              <span class="mini-tag">양호</span>
+            </div>
+            <div class="card card--mini">
+              <div class="card__label">활동 부하</div>
+              <div class="mini-val"><b id="dashStrain">8.1</b><span>/10</span></div>
+              <span class="mini-tag mini-tag--amber">관찰</span>
+            </div>
+          </div>
+
+          <div class="dash__foot">
+            <span><em>마지막 동기화</em><b>2분 전</b></span>
+            <span><em>데이터 소스</em><b>SynerSI Watch</b></span>
+            <span><em>상태</em><b class="ok"><i aria-hidden="true"></i>연결됨</b></span>
           </div>
         </article>
-        <p class="fig">Fig.&nbsp;01 — 개인 회복 리포트. 수치는 화면 예시입니다.</p>
       </div>
     </div>
 
-    <div class="hero__strip">
-      <div class="container hero__strip-inner">
-        <span class="strip__label">현장 스택</span>
-        <ul class="strip__list">
-          <li>Apple Watch<em>1Hz 수집</em></li>
-          <li>iPhone<em>워치 5대 페어링</em></li>
-          <li>iPad<em>얼굴 모자이크</em></li>
-          <li>macOS<em>현장 서버</em></li>
+    <div class="hero__targets">
+      <div class="wrap targets">
+        <span class="targets__label">도입 대상</span>
+        <ul class="targets__list">
+          <li>지자체 치유의 숲</li>
+          <li>웰니스 관광 사업단</li>
+          <li>호텔 · 리조트</li>
+          <li>기업 · 학술 기관</li>
         </ul>
-        <span class="strip__note">가명 운영 · 얼굴 모자이크 · 2단 파기</span>
       </div>
     </div>
   </section>
 
   <!-- ─────────────── PRODUCT SHOWCASE ─────────────── -->
-  <section class="section section--alabaster" id="product" aria-labelledby="product-title">
-    <div class="container">
+  <section class="sec" id="product" aria-labelledby="product-title">
+    <div class="wrap">
       <header class="sec-head reveal">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>제품 미리보기</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">01</span>제품 미리보기</p>
         <h2 class="sec-title" id="product-title">현장의 화면 그대로.</h2>
         <p class="sec-lede">관제 · 회복 곡선 · 리포트. 실제 운영 화면에서 세 가지를 옮겨 왔습니다. 탭을 눌러 확인하세요.</p>
       </header>
@@ -153,17 +227,17 @@
       <div class="showcase reveal" data-showcase>
         <div class="showcase__bar">
           <div class="tabs" role="tablist" aria-label="제품 화면 선택">
-            <button class="tab is-active" role="tab" id="tab-live" aria-selected="true" aria-controls="panel-live" tabindex="0">실시간 관제</button>
-            <button class="tab" role="tab" id="tab-curve" aria-selected="false" aria-controls="panel-curve" tabindex="-1">회복 곡선</button>
-            <button class="tab" role="tab" id="tab-report" aria-selected="false" aria-controls="panel-report" tabindex="-1">효과 리포트</button>
+            <button class="tab is-active" type="button" role="tab" id="tab-live" aria-selected="true" aria-controls="panel-live" tabindex="0">실시간 20인 관제</button>
+            <button class="tab" type="button" role="tab" id="tab-curve" aria-selected="false" aria-controls="panel-curve" tabindex="-1">HRV 회복 곡선</button>
+            <button class="tab" type="button" role="tab" id="tab-report" aria-selected="false" aria-controls="panel-report" tabindex="-1">효과 리포트</button>
           </div>
-          <span class="showcase__fig mono" data-fig>Fig.&nbsp;02 — 20인 실시간 관제</span>
+          <span class="showcase__fig mono" data-fig>Fig. 02 — 20인 실시간 관제</span>
         </div>
 
         <div class="showcase__body">
           <!-- 01 live -->
           <div class="panel is-active" role="tabpanel" id="panel-live" aria-labelledby="tab-live" tabindex="0">
-            <div class="live__head">
+            <div class="panel__head">
               <div>
                 <h3 class="panel__title">20인 실시간 관제</h3>
                 <p class="panel__sub">회차 4 · 제주 치유의 숲 · 14:20 진행 중</p>
@@ -183,15 +257,15 @@
           <div class="panel" role="tabpanel" id="panel-curve" aria-labelledby="tab-curve" tabindex="0" hidden>
             <div class="curve">
               <div class="curve__main">
-                <div class="live__head">
+                <div class="panel__head">
                   <div>
                     <h3 class="panel__title">HRV(SDNN) 회복 곡선</h3>
                     <p class="panel__sub">USER-012 · 안정 → 부하 → 회복 3구간 자동 판별</p>
                   </div>
-                  <span class="pill">자동 판별</span>
+                  <span class="pill-ok pill-ok--lg">자동 판별</span>
                 </div>
                 <figure class="curve__figure">
-                  <svg class="chart chart--lg" viewBox="0 0 760 300" role="img" aria-label="세 구간으로 나뉜 SDNN 회복 곡선" data-chart="curve"></svg>
+                  <svg class="chart chart--lg" viewBox="0 0 760 300" preserveAspectRatio="none" role="img" aria-label="세 구간으로 나뉜 SDNN 회복 곡선" data-chart="curve"></svg>
                   <div class="chart__phases" aria-hidden="true">
                     <span>안정 20분</span><span>부하 35분</span><span>회복 15분</span>
                   </div>
@@ -199,9 +273,9 @@
               </div>
               <aside class="curve__side">
                 <div class="side__row"><span>기준 SDNN</span><strong>68 <em>ms</em></strong></div>
-                <div class="side__row"><span>회복기 SDNN</span><strong>82 <em>ms</em></strong></div>
+                <div class="side__row"><span>회복기 SDNN</span><strong class="up">82 <em>ms</em></strong></div>
                 <div class="side__row"><span>최대 심박</span><strong>132 <em>bpm</em></strong></div>
-                <div class="side__row"><span>회복 하강</span><strong>−14 <em>bpm</em></strong></div>
+                <div class="side__row"><span>회복 하강</span><strong class="up">−14 <em>bpm</em></strong></div>
                 <div class="side__note">판정은 180초 지속 안정과 정점 후 8bpm 이상 하강을 기준으로 하며, 자료가 부족하면 종료 기록으로 대체합니다.</div>
               </aside>
             </div>
@@ -256,18 +330,18 @@
           </div>
         </div>
       </div>
-      <p class="fig fig--center reveal">실제 운영 화면 발췌 · 표시된 수치는 화면 예시입니다.</p>
+      <p class="fig reveal">실제 운영 화면 발췌 · 표시된 수치는 화면 예시입니다.</p>
     </div>
   </section>
 
   <!-- ─────────────── ABOUT / BRAND ─────────────── -->
-  <section class="section section--paper about" id="about" aria-labelledby="about-title">
-    <div class="container about__inner">
+  <section class="sec sec--raise about" id="about" aria-labelledby="about-title">
+    <div class="wrap about__inner">
       <div class="about__copy reveal">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>회사 소개</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">02</span>회사 소개</p>
         <h2 class="sec-title" id="about-title">기록되지 않은 치유는<br>증명되지 않습니다.</h2>
-        <p class="about__p">시너지스(SynerSI)는 치유관광과 웰니스 프로그램의 효과를 생체신호로 확인하는 회사입니다. 프로그램이 끝난 뒤의 만족도 조사 대신, 프로그램이 진행되는 동안 몸이 어떻게 반응했는지를 남깁니다.</p>
-        <p class="about__p">측정은 익숙한 장비 위에서 이뤄집니다. 참가자는 애플워치를 차고, 운영자는 아이폰과 아이패드로 현장을 기록합니다. 시너지스는 그 신호를 판정하고, 기관이 그대로 제출할 수 있는 문서로 정리합니다.</p>
+        <p class="lead-p">시너지스(SynerSI)는 치유관광과 웰니스 프로그램의 효과를 생체신호로 확인하는 회사입니다. 프로그램이 끝난 뒤의 만족도 조사 대신, 프로그램이 진행되는 동안 몸이 어떻게 반응했는지를 남깁니다.</p>
+        <p class="lead-p">측정은 익숙한 장비 위에서 이뤄집니다. 참가자는 애플워치를 차고, 운영자는 아이폰과 아이패드로 현장을 기록합니다. 시너지스는 그 신호를 판정하고, 기관이 그대로 제출할 수 있는 문서로 정리합니다.</p>
         <dl class="about__facts">
           <div><dt>출발</dt><dd>2026</dd></div>
           <div><dt>기반</dt><dd>제주특별자치도 서귀포시</dd></div>
@@ -276,7 +350,12 @@
       </div>
       <figure class="about__brand reveal">
         <div class="about__plate">
-          <img src="assets/brand/synersi-wordmark.webp" alt="시너지스(SynerSI) 3D 크리스탈 로고" width="820" height="906">
+          <span class="about__ring" aria-hidden="true"></span>
+          <img src="assets/brand/synersi-mark.webp" alt="시너지스(SynerSI) 3D 크리스탈 심볼" width="640" height="640">
+          <div class="about__lockup" aria-hidden="true">
+            <span>Syner<span class="brand__si">SI</span></span>
+            <em>BIOMETRIC EVIDENCE</em>
+          </div>
         </div>
         <figcaption class="fig">SynerSI identity — crystal · platinum · emerald</figcaption>
       </figure>
@@ -284,14 +363,14 @@
   </section>
 
   <!-- ─────────────── PROBLEM ─────────────── -->
-  <section class="section section--alabaster" id="why" aria-labelledby="why-title">
-    <div class="container why__inner">
-      <div class="why__head reveal">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>검증이 필요한 이유</p>
+  <section class="sec" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">03</span>검증이 필요한 이유</p>
         <h2 class="sec-title" id="why-title">체험은 좋았다고 말합니다.<br>보고서에는 숫자가 없습니다.</h2>
         <p class="sec-lede">예산을 심의하는 자리에서 통하는 것은 감상이 아니라 근거입니다. 시너지스는 그 근거를 만드는 일부터 시작합니다.</p>
-      </div>
-      <ol class="why__list">
+      </header>
+      <ol class="why">
         <li class="why__item reveal">
           <span class="why__no mono">01</span>
           <h3>설문은 기억을 묻습니다</h3>
@@ -308,8 +387,6 @@
           <p>생체정보와 얼굴 영상은 수집 자체가 부담입니다. 언제, 무엇을, 어떻게 지울지가 처음부터 설계되어 있어야 합니다.</p>
         </li>
       </ol>
-    </div>
-    <div class="container">
       <blockquote class="pullquote reveal">
         <p>“좋았어요” 다섯 점은, 내년 예산을 지켜 주지 못합니다.</p>
         <cite>설문 만족도가 예산의 근거가 되지 못하는 이유</cite>
@@ -318,35 +395,55 @@
   </section>
 
   <!-- ─────────────── ARCHITECTURE ─────────────── -->
-  <section class="section section--dark" id="architecture" aria-labelledby="arch-title">
-    <div class="container">
+  <section class="sec sec--raise" id="architecture" aria-labelledby="arch-title">
+    <div class="wrap">
       <header class="sec-head reveal">
-        <p class="eyebrow eyebrow--dark"><span class="eyebrow__rule" aria-hidden="true"></span>증거 아키텍처</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">04</span>증거 아키텍처</p>
         <h2 class="sec-title" id="arch-title">증거는 현장에서 만들어집니다.</h2>
-        <p class="sec-lede sec-lede--dark">새로운 장비를 요구하지 않습니다. 이미 쓰고 있는 워치·아이폰·아이패드·맥 위에서 측정과 기록이 한 줄로 이어집니다.</p>
+        <p class="sec-lede">새로운 장비를 요구하지 않습니다. 이미 쓰고 있는 워치·아이폰·아이패드·맥 위에서 측정과 기록이 한 줄로 이어집니다.</p>
       </header>
 
-      <ol class="arch reveal">
-        <li class="arch__node">
-          <span class="arch__no mono">01</span>
+      <ol class="arch">
+        <li class="arch__node reveal">
+          <div class="arch__top">
+            <span class="arch__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><rect x="13" y="9" width="14" height="22" rx="5"/><path d="M16 9V5.5h8V9M16 31v3.5h8V31"/><path d="M27 16h1.6a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H27"/></svg>
+            </span>
+            <span class="arch__no mono">01</span>
+          </div>
           <h3>Apple Watch</h3>
           <p class="arch__spec mono">1 Hz · HRV(SDNN) · 3축 가속도</p>
           <p class="arch__desc">초당 1회 심박과 움직임을 수집합니다. 신호가 끊긴 구간은 워치에 최대 1시간 저장합니다.</p>
         </li>
-        <li class="arch__node">
-          <span class="arch__no mono">02</span>
+        <li class="arch__node reveal">
+          <div class="arch__top">
+            <span class="arch__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><rect x="11" y="5" width="18" height="30" rx="4"/><path d="M17.5 8.5h5"/><circle cx="20" cy="31" r="1.4"/><path d="M11 11h-2.2a1.8 1.8 0 0 0-1.8 1.8v5.4"/></svg>
+            </span>
+            <span class="arch__no mono">02</span>
+          </div>
           <h3>iPhone</h3>
           <p class="arch__spec mono">워치 5대 · 5명 동시 측정</p>
           <p class="arch__desc">아이폰 1대에 워치 5대를 묶어 5명씩 동시에 측정하고, 대기열 없이 즉시 배정합니다.</p>
         </li>
-        <li class="arch__node">
-          <span class="arch__no mono">03</span>
+        <li class="arch__node reveal">
+          <div class="arch__top">
+            <span class="arch__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><rect x="6" y="7" width="28" height="22" rx="3"/><path d="M4 33h32"/><circle cx="30" cy="24" r="1.6"/><path d="M10 12h13"/></svg>
+            </span>
+            <span class="arch__no mono">03</span>
+          </div>
           <h3>iPad</h3>
           <p class="arch__spec mono">얼굴 모자이크 · 시각 동기화</p>
           <p class="arch__desc">현장을 촬영 단계에서 모자이크 처리해 기록하고, 그래프와 같은 시각축에 놓습니다.</p>
         </li>
-        <li class="arch__node">
-          <span class="arch__no mono">04</span>
+        <li class="arch__node reveal">
+          <div class="arch__top">
+            <span class="arch__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><rect x="7" y="8" width="26" height="17" rx="2.4"/><path d="M4 29h32l-2.4 3H6.4Z"/><path d="M15 12.5h10"/></svg>
+            </span>
+            <span class="arch__no mono">04</span>
+          </div>
           <h3>macOS 현장 서버</h3>
           <p class="arch__spec mono">수집 · 판정 · 리포트</p>
           <p class="arch__desc">회차 데이터를 모아 3구간을 판정하고, 사전·사후 검사지와 교차 분석해 리포트를 만듭니다.</p>
@@ -361,73 +458,55 @@
   </section>
 
   <!-- ─────────────── 6 STAGES ─────────────── -->
-  <section class="section section--alabaster" id="stages" aria-labelledby="stages-title">
-    <div class="container">
+  <section class="sec" id="stages" aria-labelledby="stages-title">
+    <div class="wrap">
       <header class="sec-head reveal">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>운영 6단계</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">05</span>운영 6단계</p>
         <h2 class="sec-title" id="stages-title">입소에서 파기까지,<br>하나의 흐름으로.</h2>
         <p class="sec-lede">접수와 배정에서 시작해 리포트 발급과 개인정보 파기까지, 현장에서 벌어지는 일의 순서를 그대로 따릅니다.</p>
       </header>
 
       <ol class="stages">
         <li class="stage reveal">
-          <span class="stage__no mono">01</span>
-          <div class="stage__body">
-            <h3>입소 · 워치 매칭</h3>
-            <p>참가자가 QR로 문진 10항목과 동의·전자 서명을 마치면, 운영자가 워치를 배정해 가명 ID와 연결합니다. 워치 전용 QR은 대기열 없이 즉시 배정됩니다.</p>
-          </div>
-          <span class="stage__tag">Intake</span>
+          <div class="stage__top"><span class="stage__no mono">01</span><span class="stage__tag">Intake</span></div>
+          <h3>입소 · 워치 매칭</h3>
+          <p>참가자가 QR로 문진 10항목과 동의·전자 서명을 마치면, 운영자가 워치를 배정해 가명 ID와 연결합니다. 워치 전용 QR은 대기열 없이 즉시 배정됩니다.</p>
         </li>
         <li class="stage reveal">
-          <span class="stage__no mono">02</span>
-          <div class="stage__body">
-            <h3>일정 · 알림</h3>
-            <p>단체·그룹별 월·주·일 캘린더에 프로그램을 배치하고, 식사와 운동 강도를 함께 설계합니다. 프로그램 5분 전 워치 알림, A4·PDF·엑셀 내보내기.</p>
-          </div>
-          <span class="stage__tag">Schedule</span>
+          <div class="stage__top"><span class="stage__no mono">02</span><span class="stage__tag">Schedule</span></div>
+          <h3>일정 · 알림</h3>
+          <p>단체·그룹별 월·주·일 캘린더에 프로그램을 배치하고, 식사와 운동 강도를 함께 설계합니다. 프로그램 5분 전 워치 알림, A4·PDF·엑셀 내보내기.</p>
         </li>
         <li class="stage reveal">
-          <span class="stage__no mono">03</span>
-          <div class="stage__body">
-            <h3>실시간 관제 · 현장 영상</h3>
-            <p>20명을 한 화면에서 관제하고, 안정·부하·회복 3구간을 자동 판별합니다. 워치의 시작·종료를 원격 제어하고, 모자이크 영상과 그래프를 같은 시각축에서 확인합니다.</p>
-          </div>
-          <span class="stage__tag">Monitoring</span>
+          <div class="stage__top"><span class="stage__no mono">03</span><span class="stage__tag">Monitoring</span></div>
+          <h3>실시간 관제 · 현장 영상</h3>
+          <p>20명을 한 화면에서 관제하고, 안정·부하·회복 3구간을 자동 판별합니다. 워치의 시작·종료를 원격 제어하고, 모자이크 영상과 그래프를 같은 시각축에서 확인합니다.</p>
         </li>
         <li class="stage reveal">
-          <span class="stage__no mono">04</span>
-          <div class="stage__body">
-            <h3>검사지 OCR</h3>
-            <p>HRV 자율신경·말초혈관노화·체성분·뇌기능 4종 검사지를 사진과 PDF로 자동 분류합니다. 수치를 확인·수정해 사전·사후로 반영합니다.</p>
-          </div>
-          <span class="stage__tag">OCR</span>
+          <div class="stage__top"><span class="stage__no mono">04</span><span class="stage__tag">OCR</span></div>
+          <h3>검사지 OCR</h3>
+          <p>HRV 자율신경·말초혈관노화·체성분·뇌기능 4종 검사지를 사진과 PDF로 자동 분류합니다. 수치를 확인·수정해 사전·사후로 반영합니다.</p>
         </li>
         <li class="stage reveal">
-          <span class="stage__no mono">05</span>
-          <div class="stage__body">
-            <h3>상관관계 · 리포트</h3>
-            <p>교차 분석 5종으로 프로그램별 효과와 집단 간 차이를 확인하고, 개인·기관 리포트를 5개 언어로 발급합니다. 데이터 신뢰도는 100점 등급으로 표시됩니다.</p>
-          </div>
-          <span class="stage__tag">Analysis</span>
+          <div class="stage__top"><span class="stage__no mono">05</span><span class="stage__tag">Analysis</span></div>
+          <h3>상관관계 · 리포트</h3>
+          <p>교차 분석 5종으로 프로그램별 효과와 집단 간 차이를 확인하고, 개인·기관 리포트를 5개 언어로 발급합니다. 데이터 신뢰도는 100점 등급으로 표시됩니다.</p>
         </li>
         <li class="stage reveal">
-          <span class="stage__no mono">06</span>
-          <div class="stage__body">
-            <h3>개인정보 파기</h3>
-            <p>보관 기간을 카운트다운하고, ‘민감 생체정보만 파기’와 ‘전체 완전 파기’ 중 하나를 선택합니다. 익명 통계는 k=5로 남기고 파기 확인서를 발급합니다.</p>
-          </div>
-          <span class="stage__tag">Disposal</span>
+          <div class="stage__top"><span class="stage__no mono">06</span><span class="stage__tag">Disposal</span></div>
+          <h3>개인정보 파기</h3>
+          <p>보관 기간을 카운트다운하고, ‘민감 생체정보만 파기’와 ‘전체 완전 파기’ 중 하나를 선택합니다. 익명 통계는 k=5로 남기고 파기 확인서를 발급합니다.</p>
         </li>
       </ol>
     </div>
   </section>
 
   <!-- ─────────────── SPECS ─────────────── -->
-  <section class="section section--paper" id="specs" aria-labelledby="specs-title">
-    <div class="container">
+  <section class="sec sec--raise" id="specs" aria-labelledby="specs-title">
+    <div class="wrap">
       <header class="sec-head sec-head--split reveal">
         <div>
-          <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>기술 사양</p>
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">06</span>기술 사양</p>
           <h2 class="sec-title" id="specs-title">측정에서 출력까지,<br>숫자로 확인하세요.</h2>
         </div>
         <p class="sec-lede">현장에서 바로 돌아가는 구성입니다. 별도 측정 기기나 서버실 없이, 표준 장비와 맥 한 대로 운영됩니다.</p>
@@ -460,14 +539,14 @@
   </section>
 
   <!-- ─────────────── TRUST ─────────────── -->
-  <section class="section section--dark trust" id="trust" aria-labelledby="trust-title">
-    <div class="container">
+  <section class="sec trust" id="trust" aria-labelledby="trust-title">
+    <div class="wrap">
       <header class="sec-head sec-head--split reveal">
         <div>
-          <p class="eyebrow eyebrow--dark"><span class="eyebrow__rule" aria-hidden="true"></span>보안 · 개인정보</p>
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">07</span>보안 · 개인정보</p>
           <h2 class="sec-title" id="trust-title">개인정보는,<br>파기까지가 설계입니다.</h2>
         </div>
-        <p class="sec-lede sec-lede--dark">치유 현장의 데이터는 민감합니다. 시너지스는 수집 단계에서 지우는 방법까지 미리 정해 두고 운영합니다.</p>
+        <p class="sec-lede">치유 현장의 데이터는 민감합니다. 시너지스는 수집 단계에서 지우는 방법까지 미리 정해 두고 운영합니다.</p>
       </header>
 
       <div class="trust__grid">
@@ -504,10 +583,10 @@
   </section>
 
   <!-- ─────────────── AUDIENCE ─────────────── -->
-  <section class="section section--alabaster" id="who" aria-labelledby="who-title">
-    <div class="container">
+  <section class="sec sec--raise" id="who" aria-labelledby="who-title">
+    <div class="wrap">
       <header class="sec-head reveal">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>도입 대상</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">08</span>도입 대상</p>
         <h2 class="sec-title" id="who-title">이런 기관이<br>시너지스를 찾습니다.</h2>
       </header>
       <div class="who">
@@ -545,10 +624,10 @@
   </section>
 
   <!-- ─────────────── PROCESS ─────────────── -->
-  <section class="section section--paper" id="process" aria-labelledby="process-title">
-    <div class="container">
+  <section class="sec" id="process" aria-labelledby="process-title">
+    <div class="wrap">
       <header class="sec-head reveal">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>도입 절차</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">09</span>도입 절차</p>
         <h2 class="sec-title" id="process-title">네 단계로<br>현장에 자리를 잡습니다.</h2>
       </header>
       <ol class="process">
@@ -577,10 +656,10 @@
   </section>
 
   <!-- ─────────────── FAQ ─────────────── -->
-  <section class="section section--alabaster" id="faq" aria-labelledby="faq-title">
-    <div class="container">
+  <section class="sec sec--raise" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
       <header class="sec-head reveal">
-        <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>자주 묻는 질문</p>
+        <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">10</span>자주 묻는 질문</p>
         <h2 class="sec-title" id="faq-title">도입 전에<br>가장 많이 묻는 것들.</h2>
       </header>
       <div class="faq">
@@ -630,71 +709,73 @@
   </section>
 
   <!-- ─────────────── CONTACT ─────────────── -->
-  <section class="section cta" id="contact" aria-labelledby="contact-title">
-    <div class="container cta__inner">
-      <div class="cta__copy reveal">
-        <p class="eyebrow eyebrow--dark"><span class="eyebrow__rule" aria-hidden="true"></span>도입 문의</p>
-        <h2 class="sec-title" id="contact-title">프로그램에 맞는<br>검증 설계부터.</h2>
-        <p class="cta__lede">현장 일정과 인원을 알려 주시면 측정 구성과 리포트 범위를 정리해 회신드립니다. 영업일 기준 1일 안에 답변드립니다.</p>
-        <div class="cta__actions">
-          <a class="btn btn--solid btn--lg" href="mailto:profusive68@gmail.com?subject=%EC%8B%9C%EB%84%88%EC%A7%80%EC%8A%A4%20%EB%8F%84%EC%9E%85%20%EB%AC%B8%EC%9D%98&amp;body=%EC%97%B0%EB%9D%BD%EC%B2%98%3A%20%0A%EA%B8%B0%EA%B4%80%EB%AA%85%3A%20%0A%ED%9A%8C%EC%B0%A8%20%EC%9D%BC%EC%A0%95%3A%20%0A%EC%9D%B8%EC%9B%90%3A%20%0A%ED%95%84%EC%9A%94%ED%95%9C%20%EB%A6%AC%ED%8F%AC%ED%8A%B8%3A%20">이메일로 도입 상담</a>
-          <button class="btn btn--ghost btn--lg" type="button" data-copy="profusive68@gmail.com">주소 복사</button>
+  <section class="sec contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact__panel reveal">
+        <div class="contact__copy">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span><span class="eyebrow__num">11</span>도입 문의</p>
+          <h2 class="sec-title" id="contact-title">프로그램에 맞는<br>검증 설계부터.</h2>
+          <p class="contact__lede">현장 일정과 인원을 알려 주시면 측정 구성과 리포트 범위를 정리해 회신드립니다. 영업일 기준 1일 안에 답변드립니다.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary btn--lg" href="mailto:profusive68@gmail.com?subject=%EC%8B%9C%EB%84%88%EC%A7%80%EC%8A%A4%20%EB%8F%84%EC%9E%85%20%EB%AC%B8%EC%9D%98&amp;body=%EC%97%B0%EB%9D%BD%EC%B2%98%3A%20%0A%EA%B8%B0%EA%B4%80%EB%AA%85%3A%20%0A%ED%9A%8C%EC%B0%A8%20%EC%9D%BC%EC%A0%95%3A%20%0A%EC%9D%B8%EC%9B%90%3A%20%0A%ED%95%84%EC%9A%94%ED%95%9C%20%EB%A6%AC%ED%8F%AC%ED%8A%B8%3A%20">이메일로 도입 상담</a>
+            <button class="btn btn--glass btn--lg" type="button" data-copy="profusive68@gmail.com">주소 복사</button>
+          </div>
+          <p class="contact__mail"><a href="mailto:profusive68@gmail.com">profusive68@gmail.com</a></p>
         </div>
-        <p class="cta__mail"><a href="mailto:profusive68@gmail.com">profusive68@gmail.com</a></p>
+        <aside class="contact__card">
+          <h3>문의에 담아 주시면 좋습니다</h3>
+          <ul class="ticks">
+            <li>기관명과 프로그램 성격</li>
+            <li>회차 일정과 참가 인원</li>
+            <li>현장 장소와 이동 구간</li>
+            <li>제출해야 하는 리포트 범위</li>
+          </ul>
+          <div class="contact__card-foot">
+            <span class="mono">REPLY</span>
+            <span>영업일 1일 이내</span>
+          </div>
+        </aside>
       </div>
-      <aside class="cta__card reveal">
-        <h3 class="cta__card-title">문의에 담아 주시면 좋습니다</h3>
-        <ul class="ticks">
-          <li>기관명과 프로그램 성격</li>
-          <li>회차 일정과 참가 인원</li>
-          <li>현장 장소와 이동 구간</li>
-          <li>제출해야 하는 리포트 범위</li>
-        </ul>
-        <div class="cta__card-foot">
-          <span class="mono">REPLY</span>
-          <span>영업일 1일 이내</span>
-        </div>
-      </aside>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer__top">
-      <div class="footer__brand">
-        <img class="footer__mark" src="assets/brand/synersi-mark.webp" alt="" width="40" height="40" aria-hidden="true">
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div class="ftr__brand">
+        <img class="ftr__mark" src="assets/brand/synersi-mark.webp" alt="" width="36" height="36" aria-hidden="true">
         <div>
-          <p class="footer__word">Syner<span class="brand__word-si">SI</span></p>
-          <p class="footer__desc">치유관광 프로그램 효과검증 및 관리 포털</p>
+          <p class="ftr__word">Syner<span class="brand__si">SI</span></p>
+          <p class="ftr__desc">치유관광 프로그램 효과검증 및 관리 포털</p>
         </div>
       </div>
-      <nav class="footer__nav" aria-label="바닥글 메뉴">
+      <nav class="ftr__nav" aria-label="바닥글 메뉴">
         <div>
-          <p class="footer__h">제품</p>
+          <p class="ftr__h">제품</p>
           <a href="#product">제품 미리보기</a>
           <a href="#architecture">증거 아키텍처</a>
           <a href="#stages">운영 6단계</a>
           <a href="#specs">기술 사양</a>
         </div>
         <div>
-          <p class="footer__h">회사</p>
+          <p class="ftr__h">회사</p>
           <a href="#about">회사 소개</a>
           <a href="#trust">보안 · 개인정보</a>
           <a href="#process">도입 절차</a>
           <a href="#faq">자주 묻는 질문</a>
         </div>
         <div>
-          <p class="footer__h">문의</p>
+          <p class="ftr__h">문의</p>
           <a href="mailto:profusive68@gmail.com">profusive68@gmail.com</a>
           <a href="#contact">도입 상담</a>
           <a href="llms.txt">LLM용 요약</a>
         </div>
       </nav>
     </div>
-    <div class="footer__bottom">
+    <div class="ftr__bottom">
       <p>시너지스(SynerSI) · 제주특별자치도 서귀포시</p>
-      <p class="footer__note">본 서비스는 웰니스 프로그램의 효과 확인을 위한 검증 도구이며, 의료적 진단·치료를 목적으로 하지 않습니다.</p>
+      <p class="ftr__note">본 서비스는 웰니스 프로그램의 효과 확인을 위한 검증 도구이며, 의료적 진단·치료를 목적으로 하지 않습니다.</p>
       <p class="mono">© 2026 SynerSI</p>
     </div>
   </div>

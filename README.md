@@ -4,48 +4,51 @@
 빌드 도구 없이 `index.html` · `styles.css` · `app.js` 세 파일과 `assets/` 만으로 동작하는 정적 사이트이며,
 GitHub Pages(`https://profusive68-ship-it.github.io/synersi-homepage/`)에 그대로 배포됩니다.
 
-## 디자인 언어
+## 디자인 언어 — Matte Obsidian / Biometric Glass
+
+Apple Health·Whoop 계열의 다크 하이테크. 검은 현무암 위의 워치와, 그 위에 떠 있는 유리질 생체신호 패널이 첫인상을 만듭니다.
 
 | 항목 | 값 |
 | --- | --- |
-| 다크 | Obsidian `#0B0E0D` · `#101513` |
-| 라이트 | Alabaster `#F6F4EF` · Paper `#FBFAF7` |
-| 액센트 | Sage `#1E5645` / `#2C6A55` / `#8FB6A2` |
-| 금속 | Champagne `#C8B79A` |
-| 디스플레이 | `SynerSI Serif` (Noto Serif KR 서브셋, `assets/fonts/synersi-serif.woff`) |
-| 본문 | `Pretendard` 400·500·600·700 (`assets/fonts/`) |
-| 숫자·라벨 | 시스템 모노, tabular-nums |
+| 배경 | Obsidian `#060808` · Raised `#080B0A` |
+| 패널 | `rgba(255,255,255,.03)` + `1px rgba(255,255,255,.09)` 테두리 + `backdrop-filter: blur(20px)` |
+| 액센트 | Emerald-Cyan `#34E0A1` · `#4EF2B8` · `#8CF7D2` |
+| 경고·과부하 | Amber `#E2B567` · Red `#E5786B` |
+| 본문 | Pretendard 400·500·600·700 (`assets/fonts/`) |
+| 숫자·라벨 | 시스템 모노, `tabular-nums` |
+| 히어로 아트 | `assets/brand/hero-watch.webp`(데스크톱) · `hero-watch-mobile.webp`(≤720px) |
 
 원칙
 
-- **선(線)으로 나눈다.** 카드와 그림자 대신 1px 헤어라인과 여백으로 위계를 만든다.
-- **글로우·네온·그라디언트 배경을 쓰지 않는다.** 다크 섹션은 평평한 흑요석 위에 4% 이하의 빛만 얹는다.
-- **숫자는 임상 리포트처럼.** 표·축·구간 라벨은 모노, 수치는 tabular-nums, 색은 세이지 한 가지.
-- **브랜드 3D 크리스탈은 한 곳에서만** 크게 보여 준다(회사 소개 화이트 플레이트). 헤더는 34px 심볼 + 조판 워드마크.
+- **어두운 유리 위에 빛을 얹는다.** 카드는 반투명 유리, 경계는 1px 헤어라인, 강조는 에메랄드 한 색.
+- **숫자가 주인공.** 대시보드의 수치는 크고 가늘게, 라벨은 작은 모노로. 모든 예시 화면에는 `예시 데이터` 배지를 붙인다.
+- **가짜 제3자 로고를 쓰지 않는다.** 히어로 하단은 실제 도입 대상(지자체 치유의 숲·웰니스 관광 사업단·호텔·리조트·기업·학술 기관)만 적는다.
+- **주장은 제품에 근거한다.** 1Hz·아이폰 1대당 워치 5대·20인 그리드·최대 50명·오프라인 1시간 3,600건·4종 OCR·5개 언어·2단 파기·비의료 고지.
 - 한국어는 `word-break: keep-all` 로 어절 단위 줄바꿈.
 
 ## 구조
 
 ```
 index.html                 한 페이지 (12개 섹션) + JSON-LD @graph
-styles.css                 디자인 토큰 · 레이아웃 · 반응형
-app.js                     헤더·메뉴·탭·SVG 차트·20인 그리드·복사 토스트
+styles.css                 디자인 토큰 · 레이아웃 · 반응형 (1320/1180/1080/900/720/380)
+app.js                     헤더 · 메뉴 · 히어로 파형 · 1H/6H/24H 토글 · 3탭 · 20인 그리드 · 복사 토스트
 llms.txt                   LLM/생성형 검색용 사이트 요약 (섹션·사양·FAQ 전체)
 robots.txt                 검색·AI 크롤러 허용
 sitemap.xml / site.webmanifest
 assets/
-  brand/                   상징(symbol) · 3D 워드마크 · 파비콘
-  fonts/                   Pretendard 4종 + 서브셋 세리프
-  og-image.jpg             소셜 카드 1200×630
+  brand/                   심볼 · 3D 크리스탈 · 히어로 워치 아트(데스크톱/모바일) · 파비콘
+  fonts/                   Pretendard 4종 (+ 레거시 세리프 서브셋, 현재 미사용)
+  og-image.jpg             소셜 카드 1200×630 (히어로에서 캡처)
 tools/verify.py            로컬/원격 검증 (넘침·깨진 이미지·콘솔·JSON-LD·FAQ 일치)
-tools/shot.py              디자인 리뷰용 섹션 스크린샷
+tools/sections.py          섹션별 스크린샷 (디자인 리뷰)
+tools/shot.py              뷰포트별 스크린샷
 ```
 
 ## 섹션
 
-1. Hero — “치유의 순간을, 기록으로 남깁니다.” + 개인 회복 리포트 카드(예시)
+1. Hero — “측정하고. 분석하고. 증명합니다.” + 워치 아트 + 글래스 대시보드(심박 74 BPM 파형·HRV 82 ms·회복 점수 92)
 2. 제품 미리보기 — 실시간 20인 관제 / HRV 회복 곡선 / 효과 리포트 3탭 (인터랙티브)
-3. 회사 소개 — 브랜드 플레이트
+3. 회사 소개 — 크리스탈 심볼 플레이트
 4. 검증이 필요한 이유 — 3가지 문제 + 인용
 5. 증거 아키텍처 — Watch → iPhone → iPad → macOS 현장 서버
 6. 운영 6단계 — 입소·매칭 → 일정 → 관제 → OCR → 리포트 → 파기
@@ -56,19 +59,12 @@ tools/shot.py              디자인 리뷰용 섹션 스크린샷
 11. FAQ — 10문항 (JSON-LD `FAQPage` 와 문구 100% 동일)
 12. 도입 문의 — 이메일 · 주소 복사 · 체크리스트
 
-### 세리프 서브셋 주의
+### 히어로 아트 교체
 
-`assets/fonts/synersi-serif.woff` 는 현재 페이지에 쓰인 글자만 담은 서브셋(약 83KB)입니다.
-문구를 고쳐 새 글자가 생기면 그 글자만 시스템 세리프로 대체되므로, 아래 순서로 다시 만들어 주세요.
-
-1. `index.html` 에서 쓰인 글자를 모아 텍스트 파일로 저장합니다(공백 제거 후 태그를 지운 전체 문자).
-2. `fontTools.subset` 으로 Noto Serif CJK KR 정본에서 그 글자만 추출합니다.
-
-```bash
-python3 -m fontTools.subset NotoSerifCJKkr-Regular.otf \
-  --text-file=/tmp/serif_chars.txt --output-file=assets/fonts/synersi-serif.woff \
-  --flavor=woff --layout-features='kern,liga,clig,calt,ccmp,locl,palt,vert' --no-hinting --desubroutinize
-```
+`assets/brand/hero-watch.webp` 는 1536×1024 원본에서 가장자리를 알파로 페더링한 파일입니다.
+모바일용 `hero-watch-mobile.webp` 는 같은 원본의 워치 영역(70,90)–(1000,1010) 크롭입니다.
+아트를 바꿀 때는 두 파일을 함께 만들고, `<picture>` 의 `source` 와 `img` 를 같은 비율로 유지하세요.
+원본(`hero-watch.jpg`)은 보관용이며 페이지에서 직접 쓰지 않습니다.
 
 ## 검증
 
