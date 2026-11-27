@@ -1,0 +1,6 @@
+# 검증 스크립트가 만드는 스크린샷 (필요할 때 tools/verify.py로 재생성)
+tools/out/
+
+# OS
+.DS_Store
+__pycache__/

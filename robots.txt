@@ -1,0 +1,80 @@
+# 시너지스 (SynerSI) — https://profusive68-ship-it.github.io/synersi-homepage/
+# AI 검색·검색엔진 크롤러를 명시적으로 허용합니다.
+# LLM용 사이트 요약: https://profusive68-ship-it.github.io/synersi-homepage/llms.txt
+
+User-agent: *
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google (검색 + Gemini/AI 개요)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Microsoft (Bing / Copilot)
+User-agent: bingbot
+Allow: /
+
+# 네이버 (Yeti)
+User-agent: Yeti
+Allow: /
+
+# 다음 / 카카오
+User-agent: Daumoa
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# 기타 AI 크롤러
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+Sitemap: https://profusive68-ship-it.github.io/synersi-homepage/sitemap.xml
