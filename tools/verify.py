@@ -92,7 +92,7 @@ def main() -> int:
               const imgs = [...document.images].map(i => ({
                 src: i.currentSrc || i.src, ok: i.naturalWidth > 0,
                 w: i.naturalWidth, h: i.naturalHeight }));
-              const skip = '.hero__bg,.hero__veil,.hero__grid,.orb__ring,.cta__bg';
+              const skip = '.hero__light';
               const wide = [...document.querySelectorAll('body *')]
                 .filter(el => !el.matches(skip) && !el.closest('[role="presentation"]'))
                 .filter(el => { const r = el.getBoundingClientRect();
@@ -122,7 +122,7 @@ def main() -> int:
 
             if full:
                 # 등장 애니메이션을 실제 스크롤로 발동시킨 뒤 전체 페이지를 찍는다
-                page.add_style_tag(content="#header{position:absolute !important}")
+                page.add_style_tag(content=".site-header{position:absolute !important}")
                 page.evaluate("""async () => {
                   document.documentElement.style.scrollBehavior = 'auto';
                   const step = Math.round(window.innerHeight * 0.6);
@@ -179,7 +179,10 @@ def main() -> int:
 
         # 내부 링크 자원 확인 (CSS/JS/llms/robots/sitemap)
         for rel in ("styles.css", "app.js", "llms.txt", "robots.txt", "sitemap.xml",
-                    "assets/og-image.jpg", "assets/hero-forest.webp"):
+                    "assets/og-image.jpg", "assets/brand/synersi-mark.png",
+                    "assets/brand/synersi-wordmark.webp",
+                    "assets/fonts/synersi-serif.woff",
+                    "assets/fonts/Pretendard-Regular.woff2"):
             resp = page.request.get(url.rstrip("/") + "/" + rel)
             if resp.status != 200:
                 problems.append(f"{rel} → HTTP {resp.status}")
