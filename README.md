@@ -56,6 +56,20 @@ tools/shot.py              디자인 리뷰용 섹션 스크린샷
 11. FAQ — 10문항 (JSON-LD `FAQPage` 와 문구 100% 동일)
 12. 도입 문의 — 이메일 · 주소 복사 · 체크리스트
 
+### 세리프 서브셋 주의
+
+`assets/fonts/synersi-serif.woff` 는 현재 페이지에 쓰인 글자만 담은 서브셋(약 83KB)입니다.
+문구를 고쳐 새 글자가 생기면 그 글자만 시스템 세리프로 대체되므로, 아래 순서로 다시 만들어 주세요.
+
+1. `index.html` 에서 쓰인 글자를 모아 텍스트 파일로 저장합니다(공백 제거 후 태그를 지운 전체 문자).
+2. `fontTools.subset` 으로 Noto Serif CJK KR 정본에서 그 글자만 추출합니다.
+
+```bash
+python3 -m fontTools.subset NotoSerifCJKkr-Regular.otf \
+  --text-file=/tmp/serif_chars.txt --output-file=assets/fonts/synersi-serif.woff \
+  --flavor=woff --layout-features='kern,liga,clig,calt,ccmp,locl,palt,vert' --no-hinting --desubroutinize
+```
+
 ## 검증
 
 ```bash
